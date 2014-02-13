@@ -14,6 +14,6 @@ def home(request):
     hint = DBSession.query(Hint).first()
     return {'project': 'doh', 'hint': hint.question}
 
-@view_config(route_name='hints.new', renderer='hint_new.mak')
+@view_config(route_name='hints.new', renderer='hints/new.mak')
 def hint_new(request):
     return {}
