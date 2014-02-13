@@ -5,12 +5,13 @@ from sqlalchemy.exc import DBAPIError
 
 from .models import (
     DBSession,
-    MyModel,
+    Hint,
     )
 
 
 @view_config(route_name='home', renderer='home.mak')
 def home(request):
-    return {'project': 'doh'}
+    hint = DBSession.query(Hint).first()
+    return {'project': 'doh', 'hint': hint.question}
 
 

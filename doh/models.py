@@ -18,14 +18,14 @@ DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
 Base = declarative_base()
 
 
-class MyModel(Base):
-    __tablename__ = 'models'
+class Hint(Base):
+    __tablename__ = 'hints'
     id = Column(Integer, primary_key=True)
-    name = Column(Text)
-    value = Column(Integer)
+    question = Column(Text)
+    answer = Column(Text)
 
-    def __init__(self, name, value):
-        self.name = name
-        self.value = value
+    def __init__(self, question, answer):
+        self.question = question
+        self.answer = answer
 
-Index('my_index', MyModel.name, unique=True, mysql_length=255)
+Index('idx_hint_id', Hint.id, unique=True)

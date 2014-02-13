@@ -2,5 +2,5 @@
 ## calls the layout def
 <%master:layout>
     <%def name="title()">Hello world!</%def>
-    this is the project ${project}
+    this is the project ${project} ${hint}
 </%master:layout>
