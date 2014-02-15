@@ -6,7 +6,6 @@ from .models import (
     Base,
     )
 
-
 def main(global_config, **settings):
     """ This function returns a Pyramid WSGI application.
     """
@@ -15,6 +14,9 @@ def main(global_config, **settings):
     Base.metadata.bind = engine
     config = Configurator(settings=settings)
 
+    uploaddir = settings['images.uploaded']
+
+    config.add_static_view(name='images', path=uploaddir)
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('home', '/')
     config.add_route('hints.new', '/hints/new')

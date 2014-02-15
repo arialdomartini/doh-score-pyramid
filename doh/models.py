@@ -3,6 +3,7 @@ from sqlalchemy import (
     Index,
     Integer,
     Text,
+    Binary,
     )
 
 from sqlalchemy.ext.declarative import declarative_base
@@ -22,10 +23,12 @@ class Hint(Base):
     __tablename__ = 'hints'
     id = Column(Integer, primary_key=True)
     question = Column(Text)
+    question_image = Column(Text)
     answer = Column(Text)
 
-    def __init__(self, question, answer):
+    def __init__(self, question, question_image, answer):
         self.question = question
+        self.question_image = question_image
         self.answer = answer
 
 Index('idx_hint_id', Hint.id, unique=True)
