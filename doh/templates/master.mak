@@ -1,40 +1,23 @@
 <%def name="layout()">
 <!DOCTYPE html>
-<!-- saved from url=(0027)http://bootswatch.com/yeti/ -->
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
+  <head>
     <meta charset="utf-8">
     <title>${caller.title()}</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="http://bootswatch.com/yeti/bootstrap.css" media="screen">
-    <link rel="stylesheet" href="http://bootswatch.com/assets/css/bootswatch.min.css">
+    <link rel="stylesheet" href="/static/css/bootstrap.css" media="screen">
+    <link rel="stylesheet" href="/static/css/bootswatch.min.css">
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
-      <script src="../bower_components/html5shiv/dist/html5shiv.js"></script>
-      <script src="../bower_components/respond/dest/respond.min.js"></script>
+      <script src="/static/js/html5shiv.js"></script>
+      <script src="/static/js/respond.min.js"></script>
     <![endif]-->
-    <script type="text/javascript" async="" src="./master_files/ga.js"></script><script>
-
-     var _gaq = _gaq || [];
-      _gaq.push(['_setAccount', 'UA-23019901-1']);
-      _gaq.push(['_setDomainName', "bootswatch.com"]);
-        _gaq.push(['_setAllowLinker', true]);
-      _gaq.push(['_trackPageview']);
-
-     (function() {
-       var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-       ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-       var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-     })();
-
-    </script><style type="text/css"></style>
-  <script type="text/javascript" async="" src="http://s3.buysellads.com/ac/bsa.js"></script></head>
-  <body style="">
-    <script src="./master_files/bsa.js"></script>
-
+  </head>
+  <body>
     <div class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-          <a href="http://bootswatch.com/" class="navbar-brand">Bootswatch</a>
+          <a href="../" class="navbar-brand">Bootswatch</a>
           <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#navbar-main">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -44,40 +27,40 @@
         <div class="navbar-collapse collapse" id="navbar-main">
           <ul class="nav navbar-nav">
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="http://bootswatch.com/yeti/#" id="themes">Themes <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="themes">Themes <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="themes">
-                <li><a href="http://bootswatch.com/default/">Default</a></li>
+                <li><a href="../default/">Default</a></li>
                 <li class="divider"></li>
-                <li><a href="http://bootswatch.com/amelia/">Amelia</a></li>
-                <li><a href="http://bootswatch.com/cerulean/">Cerulean</a></li>
-                <li><a href="http://bootswatch.com/cosmo/">Cosmo</a></li>
-                <li><a href="http://bootswatch.com/cyborg/">Cyborg</a></li>
-                <li><a href="http://bootswatch.com/flatly/">Flatly</a></li>
-                <li><a href="http://bootswatch.com/journal/">Journal</a></li>
-                <li><a href="http://bootswatch.com/lumen/">Lumen</a></li>
-                <li><a href="http://bootswatch.com/readable/">Readable</a></li>
-                <li><a href="http://bootswatch.com/simplex/">Simplex</a></li>
-                <li><a href="http://bootswatch.com/slate/">Slate</a></li>
-                <li><a href="http://bootswatch.com/spacelab/">Spacelab</a></li>
-                <li><a href="http://bootswatch.com/superhero/">Superhero</a></li>
-                <li><a href="http://bootswatch.com/united/">United</a></li>
-                <li><a href="./master_files/master.html">Yeti</a></li>
+                <li><a href="../amelia/">Amelia</a></li>
+                <li><a href="../cerulean/">Cerulean</a></li>
+                <li><a href="../cosmo/">Cosmo</a></li>
+                <li><a href="../cyborg/">Cyborg</a></li>
+                <li><a href="../flatly/">Flatly</a></li>
+                <li><a href="../journal/">Journal</a></li>
+                <li><a href="../lumen/">Lumen</a></li>
+                <li><a href="../readable/">Readable</a></li>
+                <li><a href="../simplex/">Simplex</a></li>
+                <li><a href="../slate/">Slate</a></li>
+                <li><a href="../spacelab/">Spacelab</a></li>
+                <li><a href="../superhero/">Superhero</a></li>
+                <li><a href="../united/">United</a></li>
+                <li><a href="../yeti/">Yeti</a></li>
               </ul>
             </li>
             <li>
-              <a href="http://bootswatch.com/help/">Help</a>
+              <a href="../help/">Help</a>
             </li>
             <li>
-              <a href="http://news.bootswatch.com/">Blog</a>
+              <a href="http://news.bootswatch.com">Blog</a>
             </li>
             <li class="dropdown">
-              <a class="dropdown-toggle" data-toggle="dropdown" href="http://bootswatch.com/yeti/#" id="download">Download <span class="caret"></span></a>
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="download">Download <span class="caret"></span></a>
               <ul class="dropdown-menu" aria-labelledby="download">
-                <li><a href="http://bootswatch.com/yeti/bootstrap.min.css">bootstrap.min.css</a></li>
-                <li><a href="http://bootswatch.com/yeti/bootstrap.css">bootstrap.css</a></li>
+                <li><a href="./bootstrap.min.css">bootstrap.min.css</a></li>
+                <li><a href="./bootstrap.css">bootstrap.css</a></li>
                 <li class="divider"></li>
-                <li><a href="http://bootswatch.com/yeti/variables.less">variables.less</a></li>
-                <li><a href="http://bootswatch.com/yeti/bootswatch.less">bootswatch.less</a></li>
+                <li><a href="./variables.less">variables.less</a></li>
+                <li><a href="./bootswatch.less">bootswatch.less</a></li>
               </ul>
             </li>
           </ul>
@@ -93,11 +76,10 @@
 
 
     <div class="container">
-
+      ${caller.body()}
       <div class="page-header" id="banner">
         <div class="row">
           <div class="col-lg-6">
-          ${caller.body()}
             <h1>Yeti</h1>
             <p class="lead">A friendly foundation</p>
           </div>
@@ -126,22 +108,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="http://bootswatch.com/yeti/#">Brand</a>
+                  <a class="navbar-brand" href="#">Brand</a>
                 </div>
                 <div class="navbar-collapse collapse navbar-responsive-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://bootswatch.com/yeti/#">Active</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Link</a></li>
+                    <li class="active"><a href="#">Active</a></li>
+                    <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                      <a href="http://bootswatch.com/yeti/#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Dropdown header</li>
-                        <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">One more separated link</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -149,15 +131,15 @@
                     <input type="text" class="form-control col-lg-8" placeholder="Search">
                   </form>
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://bootswatch.com/yeti/#">Link</a></li>
+                    <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                      <a href="http://bootswatch.com/yeti/#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
                         <li class="divider"></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                        <li><a href="#">Separated link</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -172,22 +154,22 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                   </button>
-                  <a class="navbar-brand" href="http://bootswatch.com/yeti/#">Brand</a>
+                  <a class="navbar-brand" href="#">Brand</a>
                 </div>
                 <div class="navbar-collapse collapse navbar-inverse-collapse">
                   <ul class="nav navbar-nav">
-                    <li class="active"><a href="http://bootswatch.com/yeti/#">Active</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Link</a></li>
+                    <li class="active"><a href="#">Active</a></li>
+                    <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                      <a href="http://bootswatch.com/yeti/#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
                         <li class="divider"></li>
                         <li class="dropdown-header">Dropdown header</li>
-                        <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">One more separated link</a></li>
+                        <li><a href="#">Separated link</a></li>
+                        <li><a href="#">One more separated link</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -195,15 +177,15 @@
                     <input type="text" class="form-control col-lg-8" placeholder="Search">
                   </form>
                   <ul class="nav navbar-nav navbar-right">
-                    <li><a href="http://bootswatch.com/yeti/#">Link</a></li>
+                    <li><a href="#">Link</a></li>
                     <li class="dropdown">
-                      <a href="http://bootswatch.com/yeti/#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
                       <ul class="dropdown-menu">
-                        <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                        <li><a href="#">Action</a></li>
+                        <li><a href="#">Another action</a></li>
+                        <li><a href="#">Something else here</a></li>
                         <li class="divider"></li>
-                        <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                        <li><a href="#">Separated link</a></li>
                       </ul>
                     </li>
                   </ul>
@@ -261,55 +243,55 @@
                   <button type="button" class="btn btn-default">Default</button>
                   <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </div><!-- /btn-group -->
                 <div class="btn-group">
                   <button type="button" class="btn btn-primary">Primary</button>
                   <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </div><!-- /btn-group -->
                 <div class="btn-group">
                   <button type="button" class="btn btn-success">Success</button>
                   <button type="button" class="btn btn-success dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </div><!-- /btn-group -->
                 <div class="btn-group">
                   <button type="button" class="btn btn-info">Info</button>
                   <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </div><!-- /btn-group -->
                 <div class="btn-group">
                   <button type="button" class="btn btn-warning">Warning</button>
                   <button type="button" class="btn btn-warning dropdown-toggle" data-toggle="dropdown"><span class="caret"></span></button>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </div><!-- /btn-group -->
               </div><!-- /btn-toolbar -->
@@ -336,9 +318,9 @@
 
             <div class="bs-example" style="margin-bottom: 15px;">
               <div class="btn-group btn-group-justified">
-                <a href="http://bootswatch.com/yeti/#" class="btn btn-default">Left</a>
-                <a href="http://bootswatch.com/yeti/#" class="btn btn-default">Middle</a>
-                <a href="http://bootswatch.com/yeti/#" class="btn btn-default">Right</a>
+                <a href="#" class="btn btn-default">Left</a>
+                <a href="#" class="btn btn-default">Middle</a>
+                <a href="#" class="btn btn-default">Right</a>
               </div>
             </div>
 
@@ -364,9 +346,9 @@
                       <span class="caret"></span>
                     </button>
                     <ul class="dropdown-menu">
-                      <li><a href="http://bootswatch.com/yeti/#">Dropdown link</a></li>
-                      <li><a href="http://bootswatch.com/yeti/#">Dropdown link</a></li>
-                      <li><a href="http://bootswatch.com/yeti/#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
+                      <li><a href="#">Dropdown link</a></li>
                      </ul>
                   </div>
                 </div>
@@ -416,7 +398,7 @@
           <div class="col-lg-4">
             <div class="bs-example">
               <h2>Example body text</h2>
-              <p>Nullam quis risus eget <a href="http://bootswatch.com/yeti/#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+              <p>Nullam quis risus eget <a href="#">urna mollis ornare</a> vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
               <p><small>This line of text is meant to be treated as fine print.</small></p>
               <p>The following snippet of text is <strong>rendered as bold text</strong>.</p>
               <p>The following snippet of text is <em>rendered as italicized text</em>.</p>
@@ -688,17 +670,17 @@
             <h2 id="nav-tabs">Tabs</h2>
             <div class="bs-example">
               <ul class="nav nav-tabs" style="margin-bottom: 15px;">
-                <li class="active"><a href="http://bootswatch.com/yeti/#home" data-toggle="tab">Home</a></li>
-                <li><a href="http://bootswatch.com/yeti/#profile" data-toggle="tab">Profile</a></li>
+                <li class="active"><a href="#home" data-toggle="tab">Home</a></li>
+                <li><a href="#profile" data-toggle="tab">Profile</a></li>
                 <li class="disabled"><a>Disabled</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="http://bootswatch.com/yeti/#">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Dropdown <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#dropdown1" data-toggle="tab">Action</a></li>
+                    <li><a href="#dropdown1" data-toggle="tab">Action</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#dropdown2" data-toggle="tab">Another action</a></li>
+                    <li><a href="#dropdown2" data-toggle="tab">Another action</a></li>
                   </ul>
                 </li>
               </ul>
@@ -722,19 +704,19 @@
             <h2 id="nav-pills">Pills</h2>
             <div class="bs-example">
               <ul class="nav nav-pills">
-                <li class="active"><a href="http://bootswatch.com/yeti/#">Home</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">Profile</a></li>
-                <li class="disabled"><a href="http://bootswatch.com/yeti/#">Disabled</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="disabled"><a href="#">Disabled</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="http://bootswatch.com/yeti/#">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Dropdown <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </li>
               </ul>
@@ -742,19 +724,19 @@
             <br>
             <div class="bs-example">
               <ul class="nav nav-pills nav-stacked" style="max-width: 300px;">
-                <li class="active"><a href="http://bootswatch.com/yeti/#">Home</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">Profile</a></li>
-                <li class="disabled"><a href="http://bootswatch.com/yeti/#">Disabled</a></li>
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Profile</a></li>
+                <li class="disabled"><a href="#">Disabled</a></li>
                 <li class="dropdown">
-                  <a class="dropdown-toggle" data-toggle="dropdown" href="http://bootswatch.com/yeti/#">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">
                     Dropdown <span class="caret"></span>
                   </a>
                   <ul class="dropdown-menu">
-                    <li><a href="http://bootswatch.com/yeti/#">Action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Another action</a></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Something else here</a></li>
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li class="divider"></li>
-                    <li><a href="http://bootswatch.com/yeti/#">Separated link</a></li>
+                    <li><a href="#">Separated link</a></li>
                   </ul>
                 </li>
               </ul>
@@ -767,12 +749,12 @@
                 <li class="active">Home</li>
               </ul>
               <ul class="breadcrumb">
-                <li><a href="http://bootswatch.com/yeti/#">Home</a></li>
+                <li><a href="#">Home</a></li>
                 <li class="active">Library</li>
               </ul>
               <ul class="breadcrumb" style="margin-bottom: 5px;">
-                <li><a href="http://bootswatch.com/yeti/#">Home</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">Library</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Library</a></li>
                 <li class="active">Data</li>
               </ul>
             </div>
@@ -786,29 +768,29 @@
             <h2 id="pagination">Pagination</h2>
             <div class="bs-example">
               <ul class="pagination">
-                <li class="disabled"><a href="http://bootswatch.com/yeti/#">«</a></li>
-                <li class="active"><a href="http://bootswatch.com/yeti/#">1</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">2</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">3</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">4</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">5</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">»</a></li>
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
               </ul>
               <ul class="pagination pagination-lg">
-                <li class="disabled"><a href="http://bootswatch.com/yeti/#">«</a></li>
-                <li class="active"><a href="http://bootswatch.com/yeti/#">1</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">2</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">3</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">»</a></li>
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">&raquo;</a></li>
               </ul>
               <ul class="pagination pagination-sm">
-                <li class="disabled"><a href="http://bootswatch.com/yeti/#">«</a></li>
-                <li class="active"><a href="http://bootswatch.com/yeti/#">1</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">2</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">3</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">4</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">5</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">»</a></li>
+                <li class="disabled"><a href="#">&laquo;</a></li>
+                <li class="active"><a href="#">1</a></li>
+                <li><a href="#">2</a></li>
+                <li><a href="#">3</a></li>
+                <li><a href="#">4</a></li>
+                <li><a href="#">5</a></li>
+                <li><a href="#">&raquo;</a></li>
               </ul>
             </div>
           </div>
@@ -816,14 +798,14 @@
             <h2 id="pager">Pager</h2>
             <div class="bs-example">
               <ul class="pager">
-                <li><a href="http://bootswatch.com/yeti/#">Previous</a></li>
-                <li><a href="http://bootswatch.com/yeti/#">Next</a></li>
+                <li><a href="#">Previous</a></li>
+                <li><a href="#">Next</a></li>
               </ul>
             </div>
             <div class="bs-example">
               <ul class="pager">
-                <li class="previous disabled"><a href="http://bootswatch.com/yeti/#">← Older</a></li>
-                <li class="next"><a href="http://bootswatch.com/yeti/#">Newer →</a></li>
+                <li class="previous disabled"><a href="#">&larr; Older</a></li>
+                <li class="next"><a href="#">Newer &rarr;</a></li>
               </ul>
             </div>
           </div>
@@ -851,9 +833,9 @@
             <h2>Alerts</h2>
             <div class="bs-example">
               <div class="alert alert-dismissable alert-warning">
-                <button type="button" class="close" data-dismiss="alert">×</button>
+                <button type="button" class="close" data-dismiss="alert">&times;</button>
                 <h4>Warning!</h4>
-                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="http://bootswatch.com/yeti/#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
+                <p>Best check yo self, you're not looking too good. Nulla vitae elit libero, a pharetra augue. Praesent commodo cursus magna, <a href="#" class="alert-link">vel scelerisque nisl consectetur et</a>.</p>
               </div>
             </div>
           </div>
@@ -861,20 +843,20 @@
         <div class="row">
           <div class="col-lg-4">
             <div class="alert alert-dismissable alert-danger">
-              <button type="button" class="close" data-dismiss="alert">×</button>
-              <strong>Oh snap!</strong> <a href="http://bootswatch.com/yeti/#" class="alert-link">Change a few things up</a> and try submitting again.
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Oh snap!</strong> <a href="#" class="alert-link">Change a few things up</a> and try submitting again.
             </div>
           </div>
           <div class="col-lg-4">
             <div class="alert alert-dismissable alert-success">
-              <button type="button" class="close" data-dismiss="alert">×</button>
-              <strong>Well done!</strong> You successfully read <a href="http://bootswatch.com/yeti/#" class="alert-link">this important alert message</a>.
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Well done!</strong> You successfully read <a href="#" class="alert-link">this important alert message</a>.
             </div>
           </div>
           <div class="col-lg-4">
             <div class="alert alert-dismissable alert-info">
-              <button type="button" class="close" data-dismiss="alert">×</button>
-              <strong>Heads up!</strong> This <a href="http://bootswatch.com/yeti/#" class="alert-link">alert needs your attention</a>, but it's not super important.
+              <button type="button" class="close" data-dismiss="alert">&times;</button>
+              <strong>Heads up!</strong> This <a href="#" class="alert-link">alert needs your attention</a>, but it's not super important.
             </div>
           </div>
         </div>
@@ -894,9 +876,9 @@
             <h2>Badges</h2>
             <div class="bs-example">
               <ul class="nav nav-pills">
-                <li class="active"><a href="http://bootswatch.com/yeti/#">Home <span class="badge">42</span></a></li>
-                <li><a href="http://bootswatch.com/yeti/#">Profile <span class="badge"></span></a></li>
-                <li><a href="http://bootswatch.com/yeti/#">Messages <span class="badge">3</span></a></li>
+                <li class="active"><a href="#">Home <span class="badge">42</span></a></li>
+                <li><a href="#">Profile <span class="badge"></span></a></li>
+                <li><a href="#">Messages <span class="badge">3</span></a></li>
               </ul>
             </div>
           </div>
@@ -1019,12 +1001,12 @@
           <div class="col-lg-4">
             <div class="bs-example">
               <div class="list-group">
-                <a href="http://bootswatch.com/yeti/#" class="list-group-item active">
+                <a href="#" class="list-group-item active">
                   Cras justo odio
                 </a>
-                <a href="http://bootswatch.com/yeti/#" class="list-group-item">Dapibus ac facilisis in
+                <a href="#" class="list-group-item">Dapibus ac facilisis in
                 </a>
-                <a href="http://bootswatch.com/yeti/#" class="list-group-item">Morbi leo risus
+                <a href="#" class="list-group-item">Morbi leo risus
                 </a>
               </div>
             </div>
@@ -1032,11 +1014,11 @@
           <div class="col-lg-4">
             <div class="bs-example">
               <div class="list-group">
-                <a href="http://bootswatch.com/yeti/#" class="list-group-item">
+                <a href="#" class="list-group-item">
                   <h4 class="list-group-item-heading">List group item heading</h4>
                   <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 </a>
-                <a href="http://bootswatch.com/yeti/#" class="list-group-item">
+                <a href="#" class="list-group-item">
                   <h4 class="list-group-item-heading">List group item heading</h4>
                   <p class="list-group-item-text">Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus varius blandit.</p>
                 </a>
@@ -1147,31 +1129,24 @@
           <div class="col-lg-12">
 
             <ul class="list-unstyled">
-              <li class="pull-right"><a href="http://bootswatch.com/yeti/#top">Back to top</a></li>
-              <li><a href="http://news.bootswatch.com/" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
+              <li class="pull-right"><a href="#top">Back to top</a></li>
+              <li><a href="http://news.bootswatch.com" onclick="pageTracker._link(this.href); return false;">Blog</a></li>
               <li><a href="http://feeds.feedburner.com/bootswatch">RSS</a></li>
               <li><a href="https://twitter.com/thomashpark">Twitter</a></li>
               <li><a href="https://github.com/thomaspark/bootswatch/">GitHub</a></li>
-              <li><a href="http://bootswatch.com/help/#api">API</a></li>
-              <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=F22JEM3Q78JC2">Donate</a></li>
+              <li><a href="../help/#api">API</a></li>
+              <li><a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=F22JEM3Q78JC2">Donate</a></li>
             </ul>
-            <p>Made by <a href="http://thomaspark.me/" rel="nofollow">Thomas Park</a>. Contact him at <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.</p>
+            <p>Made by <a href="http://thomaspark.me" rel="nofollow">Thomas Park</a>. Contact him at <a href="mailto:hello@thomaspark.me">hello@thomaspark.me</a>.</p>
             <p>Code released under the <a href="https://github.com/thomaspark/bootswatch/blob/gh-pages/LICENSE">MIT License</a>.</p>
-            <p>Based on <a href="http://getbootstrap.com/" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
-
+            <p>Based on <a href="http://getbootstrap.com" rel="nofollow">Bootstrap</a>. Icons from <a href="http://fortawesome.github.io/Font-Awesome/" rel="nofollow">Font Awesome</a>. Web fonts from <a href="http://www.google.com/webfonts" rel="nofollow">Google</a>.</p>
           </div>
         </div>
-
       </footer>
-
-
     </div>
-
-
-    <script src="./master_files/jquery-1.10.2.min.js"></script>
-    <script src="./master_files/bootstrap.min.js"></script>
-    <script src="./master_files/bootswatch.js"></script>
-  
-
-</body></html>
+    <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
+    <script src="/static/js/bootstrap.min.js"></script>
+    <script src="/static/js/bootswatch.js"></script>
+  </body>
+</html>
 </%def>
