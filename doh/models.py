@@ -25,10 +25,12 @@ class Hint(Base):
     question = Column(Text)
     question_image = Column(Text)
     answer = Column(Text)
+    answer_image = Column(Text)
 
-    def __init__(self, question, question_image, answer):
+    def __init__(self, question, question_image, answer, answer_image):
         self.question = question
         self.question_image = question_image
         self.answer = answer
+        self.answer_image = answer_image
 
 Index('idx_hint_id', Hint.id, unique=True)

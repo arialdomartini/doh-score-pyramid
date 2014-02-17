@@ -48,7 +48,8 @@ def hint_new(request):
         answer = request.params['answer']
         upload_dir = request.registry.settings['images.uploaded']
         question_image_filename = save_uploaded_file(request.POST['question_image'], upload_dir)
+        answer_image_filename = save_uploaded_file(request.POST['answer_image'], upload_dir)
 
-        model = Hint(question=question, question_image=question_image_filename, answer=answer)
+        model = Hint(question=question, question_image=question_image_filename, answer=answer, answer_image=answer_image_filename)
         DBSession.add(model)
         return HTTPFound(location = request.route_url('home'))

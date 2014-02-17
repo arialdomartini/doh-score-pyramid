@@ -12,6 +12,8 @@
           <label for="answer">Answer</label>
           <textarea name="answer" type="text"/>${answer}</textarea>
 
+          <label for="answer_image">Image for the answer</label>
+          <input name="answer_image" type="file" value="" />
 
           <input type="submit" name="save" />
     </form>
