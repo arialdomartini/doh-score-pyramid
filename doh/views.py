@@ -37,7 +37,7 @@ def save_uploaded_file(form_field, upload_dir):
 @view_config(route_name='home', renderer='home.mak')
 def home(request):
     hint = DBSession.query(Hint).first()
-    return {'project': request.registry.settings['images.uploaded'], 'hint': hint}
+    return {'hint': hint}
 
 @view_config(route_name='hints.new', renderer='hints/new.mak')
 def hint_new(request):
