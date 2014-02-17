@@ -22,14 +22,14 @@ Base = declarative_base()
 class Hint(Base):
     __tablename__ = 'hints'
     id = Column(Integer, primary_key=True)
-    question = Column(Text)
-    question_image = Column(Text)
+    title = Column(Text)
+    title_image = Column(Text)
     answer = Column(Text)
     answer_image = Column(Text)
 
-    def __init__(self, question, question_image, answer, answer_image):
-        self.question = question
-        self.question_image = question_image
+    def __init__(self, title, title_image, answer, answer_image):
+        self.title = title
+        self.title_image = title_image
         self.answer = answer
         self.answer_image = answer_image
 

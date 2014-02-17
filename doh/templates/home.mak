@@ -1,9 +1,9 @@
 <%namespace name="master" file="master.mak"/>
 <%master:layout>
-    <%def name="title()">Doh-score!</%def>
+    <%def name="pagetitle()">Doh-score!</%def>
     <p>
-        ${hint.question}
-        <img src="/images/${hint.question_image}" />
+        ${hint.title}
+        <img src="/images/${hint.title_image}" />
     </p>
     <p>
         ${hint.answer}

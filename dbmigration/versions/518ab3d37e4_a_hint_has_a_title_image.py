@@ -1,4 +1,4 @@
-"""a hint has a question image
+"""a hint has a title image
 
 Revision ID: 518ab3d37e4
 Revises: 545de35c0815
@@ -16,7 +16,7 @@ import sqlalchemy as sa
 
 def upgrade():
     op.add_column('hints',
-            sa.Column('question_image', sa.Unicode(100)),
+            sa.Column('title_image', sa.Unicode(100)),
     )
 
 def downgrade():

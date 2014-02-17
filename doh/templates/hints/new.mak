@@ -1,6 +1,6 @@
 <%namespace name="master" file="../master.mak"/>
 <%master:layout>
-    <%def name="title()">Register a new hint</%def>
+    <%def name="pagetitle()">Register a new hint</%def>
         <div class="row">
           <div class="col-lg-16">
             <div class="well">
@@ -8,15 +8,15 @@
                 <fieldset>
                   <legend>New hint</legend>
                   <div class="form-group">
-                    <label for="question" class="col-lg-12 control-label">Question</label>
+                    <label for="title" class="col-lg-12 control-label">Title</label>
                     <div class="col-lg-12">
-                      <textarea class="form-control" name="question" type="text" placeholder="The question">${question}</textarea>
+                      <textarea class="form-control" name="title" type="text" placeholder="Title">${title}</textarea>
                     </div>
                   </div>
                   <div class="form-group">
-                     <label for="question_image" class="col-lg-12 control-label">Image for the question</label>
+                     <label for="title_image" class="col-lg-12 control-label">Image for the title</label>
                     <div class="col-lg-12">
-                      <input name="question_image" class="form-control" type="file" value="" />
+                      <input name="title_image" class="form-control" type="file" value="" />
                     </div>
                   </div>
                   <div class="form-group">

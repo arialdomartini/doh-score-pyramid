@@ -1,4 +1,4 @@
-"""a hint has a question and an answer
+"""a hint has a title and an answer
 
 Revision ID: 545de35c0815
 Revises: None
@@ -18,7 +18,7 @@ def upgrade():
     op.create_table(
         'hints',
         sa.Column('id', sa.Integer, primary_key=True),
-        sa.Column('question', sa.Unicode(1000), nullable=False),
+        sa.Column('title', sa.Unicode(1000), nullable=False),
         sa.Column('answer', sa.Unicode(2000), nullable=False),
     )
 

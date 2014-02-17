@@ -42,14 +42,14 @@ def home(request):
 @view_config(route_name='hints.new', renderer='hints/new.mak')
 def hint_new(request):
     if(request.method == 'GET'):
-        return {'error': '', 'question': '', 'answer': ''}
+        return {'error': '', 'title': '', 'answer': ''}
     else:
-        question = request.params['question']
+        title = request.params['title']
         answer = request.params['answer']
         upload_dir = request.registry.settings['images.uploaded']
-        question_image_filename = save_uploaded_file(request.POST['question_image'], upload_dir)
+        title_image_filename = save_uploaded_file(request.POST['title_image'], upload_dir)
         answer_image_filename = save_uploaded_file(request.POST['answer_image'], upload_dir)
 
-        model = Hint(question=question, question_image=question_image_filename, answer=answer, answer_image=answer_image_filename)
+        model = Hint(title=title, title_image=title_image_filename, answer=answer, answer_image=answer_image_filename)
         DBSession.add(model)
         return HTTPFound(location = request.route_url('home'))
