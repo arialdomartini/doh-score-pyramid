@@ -51,7 +51,10 @@ def hint_new(request):
         title = request.params['title']
         answer = request.params['answer']
         upload_dir = request.registry.settings['images.uploaded']
-        title_image_filename = save_uploaded_file(request.POST['title_image'], upload_dir)
+        if request.POST['title_image']:
+                title_image_filename = save_uploaded_file(request.POST['title_image'], upload_dir)
+        else:
+                title_image_filename = None
         answer_image_filename = save_uploaded_file(request.POST['answer_image'], upload_dir)
 
         model = Hint(title=title, title_image=title_image_filename, answer=answer, answer_image=answer_image_filename)
