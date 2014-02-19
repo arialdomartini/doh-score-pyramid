@@ -45,8 +45,7 @@
           </ul>
 
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="http://builtwithbootstrap.com/" target="_blank">Built With Bootstrap</a></li>
-            <li><a href="https://wrapbootstrap.com/?ref=bsw" target="_blank">WrapBootstrap</a></li>
+            <li><a href="http://www.tastohelp.com/" target="_blank">TastoHelp</a></li>
           </ul>
 
         </div>
