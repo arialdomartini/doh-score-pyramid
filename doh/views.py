@@ -34,6 +34,10 @@ def save_uploaded_file(form_field, upload_dir):
 
         return the_name
 
+@view_config(route_name='about', renderer='about.mak')
+def about(request):
+    return {}
+
 @view_config(route_name='home', renderer='home.mak')
 def home(request):
     hint = DBSession.query(Hint).order_by("RANDOM()").first()
