@@ -51,7 +51,8 @@ def tips_new(request):
         title = request.params['title']
         answer = request.params['answer']
         upload_dir = request.registry.settings['images.uploaded']
-        if request.POST['title_image'] != None:
+        title_image = request.POST.get('title_image')
+        if hasattr(title_image, 'filename'):
                 title_image_filename = save_uploaded_file(request.POST['title_image'], upload_dir)
         else:
                 title_image_filename = None

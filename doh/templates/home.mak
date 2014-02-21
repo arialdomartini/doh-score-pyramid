@@ -20,7 +20,9 @@
   <h1>Doh-score</h1>
   <p>${tip.title}</p>
   <p>
-    <img src="/images/${tip.title_image}" />
+    % if tip.title_image != None:
+      <img src="/images/${tip.title_image}" />
+    % endif
   </p>
   <div id="title-buttons">
     <div class="col-lg-4">

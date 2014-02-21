@@ -68,7 +68,9 @@
 <script src="/static/js/jquery-1.10.2.min.js"></script>
 <script src="/static/js/bootstrap.min.js"></script>
 <script src="/static/js/bootswatch.js"></script>
-  ${caller.scripts()}
+  % if hasattr(caller, 'scripts'):
+      ${caller.scripts()}
+  % endif
 </body>
 </html>
 </%def>
