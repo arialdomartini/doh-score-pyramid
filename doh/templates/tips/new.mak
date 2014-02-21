@@ -1,12 +1,12 @@
 <%namespace name="master" file="../master.mak"/>
 <%master:layout>
-    <%def name="pagetitle()">Register a new hint</%def>
+    <%def name="pagetitle()">Register a new tip</%def>
         <div class="row">
           <div class="col-lg-16">
             <div class="well">
               <form class="bs-example form-horizontal" method="POST" accept-charset="utf-8" enctype="multipart/form-data">
                 <fieldset>
-                  <legend>New hint</legend>
+                  <legend>New tip</legend>
                   <div class="form-group">
                     <label for="title" class="col-lg-12 control-label">Title</label>
                     <div class="col-lg-12">

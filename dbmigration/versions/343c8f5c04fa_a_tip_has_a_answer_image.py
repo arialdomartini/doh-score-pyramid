@@ -1,4 +1,4 @@
-"""a hint has a answer image
+"""a tip has a answer image
 
 Revision ID: 343c8f5c04fa
 Revises: 518ab3d37e4
@@ -15,7 +15,7 @@ import sqlalchemy as sa
 
 
 def upgrade():
-    op.add_column('hints',
+    op.add_column('tips',
             sa.Column('answer_image', sa.Unicode(100)),
     )
 

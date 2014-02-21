@@ -19,8 +19,8 @@ DBSession = scoped_session(sessionmaker(extension=ZopeTransactionExtension()))
 Base = declarative_base()
 
 
-class Hint(Base):
-    __tablename__ = 'hints'
+class Tip(Base):
+    __tablename__ = 'tips'
     id = Column(Integer, primary_key=True)
     title = Column(Text)
     title_image = Column(Text)
@@ -33,4 +33,4 @@ class Hint(Base):
         self.answer = answer
         self.answer_image = answer_image
 
-Index('idx_hint_id', Hint.id, unique=True)
+Index('idx_tips_id', Tip.id, unique=True)

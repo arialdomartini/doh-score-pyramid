@@ -18,9 +18,9 @@
 
 <div class="jumbotron" >
   <h1>Doh-score</h1>
-  <p>${hint.title}</p>
+  <p>${tip.title}</p>
   <p>
-    <img src="/images/${hint.title_image}" />
+    <img src="/images/${tip.title_image}" />
   </p>
   <div id="title-buttons">
     <div class="col-lg-4">
@@ -32,9 +32,9 @@
   </div>
 </div>
 <div class="jumbotron" id="answer">
-  <p>${hint.answer}</p>
+  <p>${tip.answer}</p>
   <p>
-    <img src="/images/${hint.answer_image}" />
+    <img src="/images/${tip.answer_image}" />
   </p>
   <div class="col-md-pull-4" >
     <a class="btn btn-primary btn-lg" href="/">Ok, got it!</a>
