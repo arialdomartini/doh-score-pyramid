@@ -5,16 +5,21 @@ from .models import (
     DBSession,
     Base,
     )
+from pyramid.session import UnencryptedCookieSessionFactoryConfig
 
 def main(global_config, **settings):
-    """ This function returns a Pyramid WSGI application.
-    """
     engine = engine_from_config(settings, 'sqlalchemy.')
     DBSession.configure(bind=engine)
     Base.metadata.bind = engine
+
+    session_factory = UnencryptedCookieSessionFactoryConfig('yuvstyuiHHKctic276c5267c567c3t2yuiv')
+
     config = Configurator(settings=settings)
+    config.set_session_factory(session_factory)
+
 
     uploaddir = settings['images.uploaded']
+
 
     config.add_static_view(name='images', path=uploaddir)
     config.add_static_view('static', 'static', cache_max_age=3600)

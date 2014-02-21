@@ -11,6 +11,7 @@ from .models import (
     Tip,
     )
 
+from .domain import TipsRepository
 
 def save_uploaded_file(form_field, upload_dir):
         input_file = form_field.file
@@ -40,8 +41,18 @@ def about(request):
 
 @view_config(route_name='home', renderer='home.mak')
 def home(request):
-    tip = DBSession.query(Tip).order_by("RANDOM()").first()
+    session = request.session
+    if 'usr' not in session:
+        request.session['usr'] = uuid.uuid4()
+        request.session.save()
+    else:
+        v = request.session['usr']
+        
+    repo = TipsRepository()
+
+    tip = repo.get_next()
     return {'tip': tip}
+
 
 @view_config(route_name='tips.new', renderer='tips/new.mak')
 def tips_new(request):

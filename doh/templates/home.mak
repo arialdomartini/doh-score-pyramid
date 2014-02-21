@@ -17,7 +17,6 @@
 </%def>
 
 <div class="jumbotron" >
-  <h1>Doh-score</h1>
   <p>${tip.title}</p>
   <p>
     % if tip.title_image != None:
