@@ -34,3 +34,17 @@ class Tip(Base):
         self.answer_image = answer_image
 
 Index('idx_tips_id', Tip.id, unique=True)
+
+
+
+class Visit(Base):
+    __tablename__ = 'visits'
+    id = Column(Integer, primary_key=True)
+    session = Column(Text)
+    tip_id = Column(Integer)
+
+    def __init__(self, session, tip_id):
+        self.session = session
+        self.tip_id = tip_id
+
+Index('idx_visits_id', Visit.id, unique=True)

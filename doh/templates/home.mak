@@ -17,6 +17,7 @@
 </%def>
 
 <div class="jumbotron" >
+  <p>session: ${session}</p>
   <p>${tip.title}</p>
   <p>
     % if tip.title_image != None:

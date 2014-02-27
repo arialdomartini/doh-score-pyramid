@@ -14,44 +14,50 @@ from .models import (
 from .domain import TipsRepository
 
 def save_uploaded_file(form_field, upload_dir):
-        input_file = form_field.file
-        the_name = "%s.pic" % uuid.uuid4()
-        file_path = os.path.join(upload_dir, the_name)
+    input_file = form_field.file
+    original_filename = form_field.filename
+    the_name = "%s.%s" %( uuid.uuid4(), os.path.basename(original_filename) )
+    file_path = os.path.join(upload_dir, the_name)
+    
+    temp_file_path = file_path + '~'
+    
+    output_file = open(temp_file_path, 'wb')
 
-        temp_file_path = file_path + '~'
+    input_file.seek(0)
+    while True:
+        data = input_file.read(2<<16)
+        if not data:
+            break
+        output_file.write(data)
 
-        output_file = open(temp_file_path, 'wb')
-        # Finally write the data to a temporary file
-        input_file.seek(0)
-        while True:
-            data = input_file.read(2<<16)
-            if not data:
-                break
-            output_file.write(data)
+    output_file.close()
 
-        output_file.close()
+    os.rename(temp_file_path, file_path)
 
-        os.rename(temp_file_path, file_path)
-
-        return the_name
+    return the_name
 
 @view_config(route_name='about', renderer='about.mak')
 def about(request):
     return {}
 
-@view_config(route_name='home', renderer='home.mak')
-def home(request):
+
+def get_current_session(request):
     session = request.session
     if 'usr' not in session:
         request.session['usr'] = uuid.uuid4()
-        request.session.save()
-    else:
-        v = request.session['usr']
-        
-    repo = TipsRepository()
+#        request.session.save()
 
+    return request.session['usr']
+
+
+@view_config(route_name='home', renderer='home.mak')
+def home(request):
+    session = get_current_session(request)
+
+    repo = TipsRepository()
     tip = repo.get_next()
-    return {'tip': tip}
+
+    return {'tip': tip, 'session': session}
 
 
 @view_config(route_name='tips.new', renderer='tips/new.mak')
