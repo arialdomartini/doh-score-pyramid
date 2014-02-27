@@ -24,6 +24,7 @@ def main(global_config, **settings):
     config.add_static_view(name='images', path=uploaddir)
     config.add_static_view('static', 'static', cache_max_age=3600)
     config.add_route('home', '/')
+    config.add_route('the_end', '/end')
     config.add_route('about', '/about')
     config.add_route('tips.new', '/tips/new')
 

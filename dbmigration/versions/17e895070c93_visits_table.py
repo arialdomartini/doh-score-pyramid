@@ -18,7 +18,7 @@ def upgrade():
     op.create_table(
         'visits',
         sa.Column('id', sa.Integer, primary_key=True),
-        sa.Column('sessiom', sa.Unicode(36), nullable=False),
+        sa.Column('session', sa.Unicode(36), nullable=False),
         sa.Column('tip_id', sa.Integer, nullable=False),
     )
 

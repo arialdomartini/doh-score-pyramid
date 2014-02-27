@@ -40,12 +40,15 @@ def save_uploaded_file(form_field, upload_dir):
 def about(request):
     return {}
 
+@view_config(route_name='the_end', renderer='the_end.mak')
+def about(request):
+    return {}
+
 
 def get_current_session(request):
     session = request.session
     if 'usr' not in session:
-        request.session['usr'] = uuid.uuid4()
-#        request.session.save()
+        request.session['usr'] = str(uuid.uuid4())
 
     return request.session['usr']
 
@@ -55,9 +58,10 @@ def home(request):
     session = get_current_session(request)
 
     repo = TipsRepository()
-    tip = repo.get_next()
-
-    return {'tip': tip, 'session': session}
+    tip = repo.get_next(session)
+    if tip == None:
+        return HTTPFound(location = request.route_url('the_end'))
+    return {'tip': tip }
 
 
 @view_config(route_name='tips.new', renderer='tips/new.mak')
@@ -77,4 +81,4 @@ def tips_new(request):
 
         model = Tip(title=title, title_image=title_image_filename, answer=answer, answer_image=answer_image_filename)
         DBSession.add(model)
-        return HTTPFound(location = request.route_url('home'))
+        return HTTPFound(location = request.route_url('tips.new'))
